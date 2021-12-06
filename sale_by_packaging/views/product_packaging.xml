@@ -16,10 +16,12 @@
         <field name="model">product.packaging</field>
         <field name="inherit_id" ref="product.product_packaging_form_view" />
         <field name="arch" type="xml">
-            <field name="barcode" position="before">
-                <field name="can_be_sold" />
-                <field name="force_sale_qty" />
-            </field>
+            <xpath expr="//sheet/group" position="inside">
+                <group id="sale_group" string="Sale">
+                    <field name="can_be_sold" />
+                    <field name="force_sale_qty" />
+                </group>
+            </xpath>
         </field>
     </record>
 </odoo>

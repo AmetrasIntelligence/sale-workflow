@@ -76,6 +76,7 @@ class SaleOrderLine(models.Model):
 
     @api.onchange("product_uom_qty")
     def _onchange_product_uom_qty(self):
+        self._force_packaging()
         self._force_qty_with_package()
         res = super()._onchange_product_uom_qty()
         return res
@@ -100,25 +101,36 @@ class SaleOrderLine(models.Model):
 
     def write(self, vals):
         """Auto assign packaging if needed"""
-        if "product_packaging" in vals.keys() or self.env.context.get(
-            "_skip_auto_assign"
-        ):
+        if vals.get("product_packaging") or self.env.context.get("_skip_auto_assign"):
             # setting the packaging directly, skip auto assign
             return super().write(vals)
         for line in self:
             line_vals = vals.copy()
-            line_vals.update(line._write_auto_assign_packaging(line_vals))
+            packaging = self._get_autoassigned_packaging(line_vals)
+            if packaging:
+                line_vals.update({"product_packaging": packaging})
             super(SaleOrderLine, line).write(line_vals)
         return True
 
-    def _write_auto_assign_packaging(self, vals):
-        self.ensure_one()
+    @api.model
+    def create(self, vals):
+        """Auto assign packaging if needed"""
+        # Fill the packaging if they are empty and the quantity is a multiple
+        if not vals.get("product_packaging"):
+            packaging = self._get_autoassigned_packaging(vals)
+            if packaging:
+                vals.update({"product_packaging": packaging})
+        return super().create(vals)
+
+    def _get_autoassigned_packaging(self, vals=None):
+        if not vals:
+            vals = []
         product = (
             self.env["product.product"].browse(vals["product_id"])
             if "product_id" in vals
             else self.product_id
         )
-        if product:
+        if product and product.sell_only_by_packaging:
             quantity = (
                 vals["product_uom_qty"]
                 if "product_uom_qty" in vals
@@ -129,44 +141,15 @@ class SaleOrderLine(models.Model):
                 if "product_uom" in vals
                 else self.product_uom
             )
-            # Here, we ensure that no package is already set on the line.
-            # If so, it could lead to errors, since product_packaging_qty
-            # isn't updated after product_packaging has been modified.
-            # The simple way to handle that is to not modify product_packaging
-            # if one is already set.
-            if not self.product_packaging:
-                packaging = self._get_product_packaging_having_multiple_qty(
-                    product, quantity, uom
-                )
-                if packaging:
-                    return {"product_packaging": packaging.id}
-            # No need to raise an error here if no packaging has been found
-            #  since the error on _check_product_packaging will be raised
-        return {}
-
-    @api.model
-    def create(self, vals):
-        """Auto assign packaging if needed"""
-        # Fill the packaging if they are empty and the quantity is a multiple
-        if not vals.get("product_packaging"):
-            vals.update(self._create_auto_assign_packaging(vals))
-        return super().create(vals)
-
-    @api.model
-    def _create_auto_assign_packaging(self, vals):
-        product = (
-            self.env["product.product"].browse(vals["product_id"])
-            if "product_id" in vals
-            else False
-        )
-        if product and product.sell_only_by_packaging:
-            quantity = vals.get("product_uom_qty")
-            uom = self.env["uom.uom"].browse(vals.get("product_uom"))
             packaging = self._get_product_packaging_having_multiple_qty(
                 product, quantity, uom
             )
             if packaging:
-                return {"product_packaging": packaging.id}
-            # No need to raise an error here if no packaging has been found
-            #  since the error on _check_product_packaging will be raised
-        return {}
+                return packaging.id
+        return None
+
+    def _force_packaging(self):
+        if not self.product_packaging and self.product_id.sell_only_by_packaging:
+            packaging_id = self._get_autoassigned_packaging()
+            if packaging_id:
+                self.product_packaging = packaging_id
