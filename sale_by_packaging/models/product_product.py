@@ -42,7 +42,7 @@ class ProductProduct(models.Model):
         """
         self.ensure_one()
         packagings = self._get_packagings_with_multiple_qty(qty)
-        return fields.first(packagings.sorted("qty", reverse=True))
+        return fields.first(packagings.sorted("qty"))
 
     def _get_packagings_with_multiple_qty(self, qty):
         self.ensure_one()

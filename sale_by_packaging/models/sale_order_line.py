@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl)
 from odoo import _, api, models
 from odoo.exceptions import ValidationError
-from odoo.tools import float_compare
+from odoo.tools import float_compare, float_round
 
 
 class SaleOrderLine(models.Model):
@@ -74,7 +74,7 @@ class SaleOrderLine(models.Model):
         self.product_uom_qty = qty
         return True
 
-    @api.onchange("product_uom_qty")
+    @api.onchange("product_uom_qty", "product_id")
     def _onchange_product_uom_qty(self):
         self._force_packaging()
         self._force_qty_with_package()
@@ -153,3 +153,38 @@ class SaleOrderLine(models.Model):
             packaging_id = self._get_autoassigned_packaging()
             if packaging_id:
                 self.product_packaging = packaging_id
+
+    def _check_package(self):
+        if self.product_packaging:
+            rounded_up_qty = float_round(
+                self.product_packaging_qty,
+                precision_rounding=self.product_packaging.sale_rounding,
+                rounding_method="UP",
+            )
+            if self.product_packaging_qty != rounded_up_qty:
+                self.product_packaging_qty = rounded_up_qty
+                q = self.product_id.uom_id._compute_quantity(
+                    self.product_packaging.actual_sale_qty, self.product_uom
+                )
+                qty = self.product_qty
+                if qty and q and round(qty % q, 2):
+                    new_qty = qty - (qty % q) + q
+                    return {
+                        "warning": {
+                            "title": _("Warning"),
+                            "message": _(
+                                "Increased quantity to %.2f %s since package '%s' "
+                                "contains %.2f %s and can only be splitted "
+                                "into %s pieces."
+                            )
+                            % (
+                                new_qty,
+                                self.product_id.uom_id.name,
+                                self.product_packaging.name,
+                                self.product_packaging.qty,
+                                self.product_id.uom_id.name,
+                                round(1 / self.product_packaging.sale_rounding, 0),
+                            ),
+                        },
+                    }
+            return {}

@@ -19,6 +19,7 @@
             <xpath expr="//sheet/group" position="inside">
                 <group id="sale_group" string="Sale">
                     <field name="can_be_sold" />
+                    <field name="sale_rounding" />
                     <field name="force_sale_qty" />
                 </group>
             </xpath>
