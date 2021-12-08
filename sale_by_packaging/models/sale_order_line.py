@@ -69,7 +69,9 @@ class SaleOrderLine(models.Model):
         """
         self.ensure_one()
         qty = self.product_id._convert_packaging_qty(
-            self.product_uom_qty, self.product_uom, packaging=self.product_packaging
+            self.product_uom_qty,
+            self.product_uom or self.product_id.uom_id,
+            packaging=self.product_packaging,
         )
         self.product_uom_qty = qty
         return True
