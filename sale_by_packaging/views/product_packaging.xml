@@ -18,6 +18,7 @@
         <field name="arch" type="xml">
             <xpath expr="//sheet/group" position="inside">
                 <group id="sale_group" string="Sale">
+                    <field name="product_uom_id" position="move" />
                     <field name="can_be_sold" />
                     <field name="sale_rounding" />
                     <field name="force_sale_qty" />
