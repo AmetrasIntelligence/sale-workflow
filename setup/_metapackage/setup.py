@@ -104,6 +104,7 @@ setuptools.setup(
         'odoo13-addon-sale_validity',
         'odoo13-addon-sale_wishlist',
         'odoo13-addon-sales_team_security',
+        'odoo13-addon-sales_order_line_deep_sort',
     ],
     classifiers=[
         'Programming Language :: Python',
