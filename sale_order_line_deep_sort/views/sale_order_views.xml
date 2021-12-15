@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_order_form">
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Sorting">
+                    <group name="line_order">
+                        <label for="line_order" />
+                        <div>
+                            <field
+                                name="line_order"
+                                lass="oe_inline"
+                                options="{'no_create': True}"
+                            />
+                            (<field
+                                name="line_direction"
+                                class="oe_inline"
+                                attrs="{'required': [('line_order', '!=', False)]}"
+                            />)
+                        </div>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
