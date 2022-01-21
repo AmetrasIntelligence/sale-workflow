@@ -18,6 +18,12 @@ class ResCompany(models.Model):
         help="Select a sorting criteria for sale order lines.",
         domain="[('model', '=', 'sale.order.line')]",
     )
+    default_so_line_order_2 = fields.Many2one(
+        comodel_name="ir.model.fields",
+        string="Line Order 2",
+        help="Select a second sorting criteria for sale order lines.",
+        domain="[('model', '=', 'sale.order.line')]",
+    )
     default_so_line_direction = fields.Selection(
         selection=SORTING_DIRECTION,
         string="Sort Direction",
