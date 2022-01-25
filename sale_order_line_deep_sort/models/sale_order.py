@@ -41,7 +41,9 @@ class SaleOrder(models.Model):
             val = getattr(obj, line_order.name)
             # Odoo object
             if isinstance(val, models.BaseModel):
-                if hasattr(val[0], "name"):
+                if not val:
+                    val = ""
+                elif hasattr(val[0], "name"):
                     val = ",".join(val.mapped("name"))
                 else:
                     val = ",".join([str(id) for id in val.mapped("id")])
@@ -72,21 +74,17 @@ class SaleOrder(models.Model):
             or "line_order_2" in values
             or "line_direction" in values
         ):
-            self._sort_sale_line()
+            for record in self:
+                record._sort_sale_line()
         return res
-
-    @api.model
-    def create(self, values):
-        sale = super().create(values)
-        sale._sort_sale_line()
-        return sale
 
 
 class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
-    @api.model
-    def create(self, vals):
-        line = super().create(vals)
-        line.order_id._sort_sale_line()
-        return line
+    @api.model_create_multi
+    def create(self, vals_list):
+        lines = super().create(vals_list)
+        for order_id in lines.mapped("order_id"):
+            order_id._sort_sale_line()
+        return lines
