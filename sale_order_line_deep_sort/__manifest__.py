@@ -3,7 +3,7 @@
 
 {
     "name": "Sale Order Line Deep Sort",
-    "version": "13.0.1.1.1",
+    "version": "13.0.1.1.2",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "category": "Sale Management",
