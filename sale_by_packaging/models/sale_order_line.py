@@ -162,13 +162,12 @@ class SaleOrderLine(models.Model):
                 "Product Unit of Measure"
             )
             package_precision = self.product_packaging.sale_rounding
-            multiplier = (
-                self.product_packaging_qty // self.product_packaging.actual_sale_qty
-            )
-            rest = self.product_packaging_qty % self.product_packaging.actual_sale_qty
+            pkg_qty = self.product_uom_qty / self.product_packaging.qty
+            multiplier = pkg_qty // self.product_packaging.sale_rounding
+            rest = pkg_qty % self.product_packaging.sale_rounding
             product_packaging_qty = float_round(
                 (multiplier + (1 if rest else 0))
-                * self.product_packaging.actual_sale_qty,
+                * self.product_packaging.sale_rounding,
                 precision_digits=product_precision,
             )
             product_uom_qty = product_packaging_qty * self.product_packaging.qty
