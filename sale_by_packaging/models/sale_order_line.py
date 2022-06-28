@@ -153,7 +153,7 @@ class SaleOrderLine(models.Model):
         # Fill the packaging if they are empty and the quantity is a multiple
         for vals in vals_list:
             if not vals.get("product_packaging"):
-                if not "product_uom_qty" in vals:
+                if "product_uom_qty" not in vals:
                     vals["product_uom_qty"] = 1.0
                 packaging = self._get_autoassigned_packaging(vals)
                 if packaging:
