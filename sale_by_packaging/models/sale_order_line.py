@@ -136,24 +136,32 @@ class SaleOrderLine(models.Model):
                 packaging = line._get_autoassigned_packaging(line_vals)
                 if packaging:
                     line_vals.update({"product_packaging": packaging})
-            if line_vals.get("product_uom_qty") or line_vals.get("product_id"):
+            if (
+                line_vals.get("product_uom_qty")
+                or line_vals.get("product_id")
+                or line_vals.get("product_packaging")
+                or line_vals.get("product_uom")
+            ):
                 product_qty = line.get_packaging_qty(line_vals)
                 line_vals.update({"product_uom_qty": product_qty})
             super(SaleOrderLine, line).write(line_vals)
         return True
 
-    @api.model
-    def create(self, vals):
+    @api.model_create_multi
+    def create(self, vals_list):
         """Auto assign packaging if needed"""
         # Fill the packaging if they are empty and the quantity is a multiple
-        if not vals.get("product_packaging"):
-            packaging = self._get_autoassigned_packaging(vals)
-            if packaging:
-                vals.update({"product_packaging": packaging})
-        if vals.get("product_uom_qty") or vals.get("product_id"):
-            product_qty = self.get_packaging_qty(vals)
-            vals.update({"product_uom_qty": product_qty})
-        return super().create(vals)
+        for vals in vals_list:
+            if not vals.get("product_packaging"):
+                if not "product_uom_qty" in vals:
+                    vals["product_uom_qty"] = 1.0
+                packaging = self._get_autoassigned_packaging(vals)
+                if packaging:
+                    vals.update({"product_packaging": packaging})
+                    if vals.get("product_id") and vals.get("product_uom"):
+                        product_qty = self.get_packaging_qty(vals)
+                        vals.update({"product_uom_qty": product_qty})
+        return super().create(vals_list)
 
     def _get_autoassigned_packaging(self, vals=None):
         if not vals:
