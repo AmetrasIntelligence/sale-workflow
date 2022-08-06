@@ -1,36 +1,29 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * sale_exception
-#
-# Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2018
-# Rudolf Schnapka <rs@techno-flex.de>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-16 11:37+0000\n"
-"PO-Revision-Date: 2018-01-16 11:37+0000\n"
-"Last-Translator: Rudolf Schnapka <rs@techno-flex.de>, 2018\n"
-"Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
-"Language: de\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_exception/i18n/sale_exception.pot\n"
+"X-Crowdin-File-ID: 5146\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 22:00\n"
 
 #. module: sale_exception
 #: model_terms:ir.ui.view,arch_db:sale_exception.view_order_form
-msgid ""
-"<strong>There are exceptions blocking the confirmation of this Sale Order:</"
-"strong>"
+msgid "<strong>There are exceptions blocking the confirmation of this Sale Order:</strong>"
 msgstr ""
 
 #. module: sale_exception
 #: model_terms:ir.ui.view,arch_db:sale_exception.view_order_form
-msgid ""
-"<strong>There are exceptions on this line blocking the confirmation of this "
-"quotation:</strong>"
+msgid "<strong>There are exceptions on this line blocking the confirmation of this quotation:</strong>"
 msgstr ""
 
 #. module: sale_exception
@@ -62,29 +55,27 @@ msgstr ""
 #. module: sale_exception
 #: model_terms:ir.ui.view,arch_db:sale_exception.view_sale_exception_confirm
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #. module: sale_exception
 #: model_terms:ir.ui.view,arch_db:sale_exception.view_order_form
-msgid ""
-"Click here to be able to confirm this Sale Orders regardless of the "
-"exceptions."
+msgid "Click here to be able to confirm this Sale Orders regardless of the exceptions."
 msgstr ""
 
 #. module: sale_exception
 #: model_terms:ir.ui.view,arch_db:sale_exception.view_sale_exception_confirm
 msgid "Confirm"
-msgstr ""
+msgstr "bestätigen"
 
 #. module: sale_exception
 #: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__create_uid
 msgid "Created by"
-msgstr "Angelegt durch"
+msgstr "Erstellt von"
 
 #. module: sale_exception
 #: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__create_date
 msgid "Created on"
-msgstr "Angelegt am"
+msgstr "Erstellt am"
 
 #. module: sale_exception
 #: model:exception.rule,name:sale_exception.exception_partner_sale_warning
@@ -136,12 +127,12 @@ msgstr "Zuletzt geändert am"
 #. module: sale_exception
 #: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__write_uid
 msgid "Last Updated by"
-msgstr "Zuletzt akualisiert durch"
+msgstr "Zuletzt aktualisiert von"
 
 #. module: sale_exception
 #: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__write_date
 msgid "Last Updated on"
-msgstr "Zuletzt akualisiert am"
+msgstr "Zuletzt aktualisiert am"
 
 #. module: sale_exception
 #: model:exception.rule,description:sale_exception.excep_no_zip
@@ -178,7 +169,7 @@ msgstr ""
 #. module: sale_exception
 #: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__related_model_id
 msgid "Sale"
-msgstr ""
+msgstr "Verkauf"
 
 #. module: sale_exception
 #: model:ir.actions.act_window,name:sale_exception.action_sale_test_tree
@@ -199,7 +190,7 @@ msgstr ""
 #. module: sale_exception
 #: model:ir.model.fields.selection,name:sale_exception.selection__exception_rule__model__sale_order
 msgid "Sale order"
-msgstr ""
+msgstr "Verkaufsauftrag"
 
 #. module: sale_exception
 #: model:ir.model.fields.selection,name:sale_exception.selection__exception_rule__model__sale_order_line
@@ -209,17 +200,17 @@ msgstr ""
 #. module: sale_exception
 #: model:ir.model.fields,field_description:sale_exception.field_exception_rule__sale_ids
 msgid "Sales"
-msgstr ""
+msgstr "Verkauf"
 
 #. module: sale_exception
 #: model:ir.model,name:sale_exception.model_sale_order
 msgid "Sales Order"
-msgstr ""
+msgstr "Kundenauftrag"
 
 #. module: sale_exception
 #: model:ir.model,name:sale_exception.model_sale_order_line
 msgid "Sales Order Line"
-msgstr ""
+msgstr "Kundenauftragszeile"
 
 #. module: sale_exception
 #: model:ir.actions.server,name:sale_exception.ir_cron_test_orders_ir_actions_server
@@ -243,5 +234,3 @@ msgstr ""
 msgid "The total can't be 0"
 msgstr ""
 
-#~ msgid "Quotation"
-#~ msgstr "Angebot"
