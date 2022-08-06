@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ametras-xsolutions\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_stock_picking_note/i18n/sale_stock_picking_note.pot\n"
+"X-Crowdin-File-ID: 5252\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 22:01\n"
+
+#. module: sale_stock_picking_note
+#: model_terms:ir.ui.view,arch_db:sale_stock_picking_note.report_delivery_document_customer_note
+msgid "<strong>Customer Comments:</strong>\n"
+"                <br/>"
+msgstr ""
+
+#. module: sale_stock_picking_note
+#: model_terms:ir.ui.view,arch_db:sale_stock_picking_note.view_picking_form
+msgid "Comments"
+msgstr ""
+
+#. module: sale_stock_picking_note
+#: model_terms:ir.ui.view,arch_db:sale_stock_picking_note.view_picking_form
+msgid "Comments that will be printed in the delivery slip"
+msgstr ""
+
+#. module: sale_stock_picking_note
+#: model:ir.model.fields,field_description:sale_stock_picking_note.field_stock_picking__customer_note
+msgid "Customer Comments"
+msgstr ""
+
+#. module: sale_stock_picking_note
+#: model:ir.model.fields,field_description:sale_stock_picking_note.field_sale_order__picking_customer_note
+msgid "Picking Customer Comments"
+msgstr ""
+
+#. module: sale_stock_picking_note
+#: model:ir.model.fields,field_description:sale_stock_picking_note.field_sale_order__picking_note
+msgid "Picking Internal Note"
+msgstr ""
+
+#. module: sale_stock_picking_note
+#: model:ir.model,name:sale_stock_picking_note.model_sale_order
+msgid "Sales Order"
+msgstr "Kundenauftrag"
+
+#. module: sale_stock_picking_note
+#: model:ir.model,name:sale_stock_picking_note.model_stock_move
+msgid "Stock Move"
+msgstr "Lagerbuchungen"
+
+#. module: sale_stock_picking_note
+#: model:ir.model,name:sale_stock_picking_note.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
