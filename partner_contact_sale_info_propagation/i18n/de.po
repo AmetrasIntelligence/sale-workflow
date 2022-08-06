@@ -1,20 +1,23 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# 	* partner_contact_sale_info_propagation
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: de\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/partner_contact_sale_info_propagation/i18n/partner_contact_sale_info_propagation.pot\n"
+"X-Crowdin-File-ID: 5096\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 21:59\n"
 
 #. module: partner_contact_sale_info_propagation
 #: model:ir.model,name:partner_contact_sale_info_propagation.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
+
