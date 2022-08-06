@@ -1,20 +1,20 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# 	* sale_discount_display_amount
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2018-10-10 12:38+0000\n"
-"Last-Translator: Cédric Pigeon (ACSONE) <cedric.pigeon@acsone.eu>\n"
-"Language-Team: none\n"
-"Language: fr\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_discount_display_amount/i18n/sale_discount_display_amount.pot\n"
+"X-Crowdin-File-ID: 5142\n"
+"Language: fr_FR\n"
+"PO-Revision-Date: 2022-08-06 21:59\n"
 
 #. module: sale_discount_display_amount
 #: model:ir.model.fields,field_description:sale_discount_display_amount.field_sale_order__discount_total
@@ -24,17 +24,17 @@ msgstr "Montant de la remise"
 
 #. module: sale_discount_display_amount
 #: model:ir.model,name:sale_discount_display_amount.model_sale_order
-#, fuzzy
 msgid "Sales Order"
-msgstr "Bons de commande"
+msgstr "Bon de commande"
 
 #. module: sale_discount_display_amount
 #: model:ir.model,name:sale_discount_display_amount.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Lignes de bon de commande"
+msgstr "Ligne de commande client"
 
 #. module: sale_discount_display_amount
 #: model:ir.model.fields,field_description:sale_discount_display_amount.field_sale_order__price_total_no_discount
 #: model:ir.model.fields,field_description:sale_discount_display_amount.field_sale_order_line__price_total_no_discount
 msgid "Subtotal Without Discount"
 msgstr "Sous-total sans la remise"
+
