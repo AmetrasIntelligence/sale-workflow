@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ametras-xsolutions\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/partner_sale_pivot/i18n/partner_sale_pivot.pot\n"
+"X-Crowdin-File-ID: 5100\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 21:59\n"
+
+#. module: partner_sale_pivot
+#: model_terms:ir.ui.view,arch_db:partner_sale_pivot.view_order_product_search
+msgid "Date"
+msgstr "Datum"
+
+#. module: partner_sale_pivot
+#: model:ir.actions.act_window,name:partner_sale_pivot.sale_report_action
+#: model_terms:ir.ui.view,arch_db:partner_sale_pivot.view_partner_form
+msgid "Sales Analysis"
+msgstr ""
+
