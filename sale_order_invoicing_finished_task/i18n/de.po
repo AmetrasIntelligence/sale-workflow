@@ -1,22 +1,20 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * sale_order_invoicing_finished_task
-#
-# Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-23 01:51+0000\n"
-"PO-Revision-Date: 2017-11-23 01:51+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2017\n"
-"Language-Team: German (https://www.transifex.com/oca/teams/23907/de/)\n"
-"Language: de\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_invoicing_finished_task/i18n/sale_order_invoicing_finished_task.pot\n"
+"X-Crowdin-File-ID: 5178\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 22:00\n"
 
 #. module: sale_order_invoicing_finished_task
 #: model:ir.model.fields,help:sale_order_invoicing_finished_task.field_product_product__invoicing_finished_task
@@ -41,38 +39,36 @@ msgstr ""
 #. module: sale_order_invoicing_finished_task
 #: model:ir.model,name:sale_order_invoicing_finished_task.model_product_template
 msgid "Product Template"
-msgstr ""
+msgstr "Produktvorlage"
 
 #. module: sale_order_invoicing_finished_task
 #: model:ir.model,name:sale_order_invoicing_finished_task.model_sale_order
-#, fuzzy
-msgid "Sale Order"
-msgstr "Verkaufsauftrag"
+msgid "Sales Order"
+msgstr "Kundenauftrag"
 
 #. module: sale_order_invoicing_finished_task
 #: model:ir.model,name:sale_order_invoicing_finished_task.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Auftragsposition"
+msgstr "Kundenauftragszeile"
 
 #. module: sale_order_invoicing_finished_task
 #: model:ir.model,name:sale_order_invoicing_finished_task.model_project_task
 msgid "Task"
-msgstr ""
+msgstr "Aufgabe"
 
 #. module: sale_order_invoicing_finished_task
 #: model:ir.model,name:sale_order_invoicing_finished_task.model_project_task_type
 msgid "Task Stage"
-msgstr ""
+msgstr "Aufgabenphase"
 
 #. module: sale_order_invoicing_finished_task
 #: model:ir.model.fields,field_description:sale_order_invoicing_finished_task.field_sale_order_line__task_ids
 msgid "Tasks"
-msgstr ""
+msgstr "Aufgaben"
 
 #. module: sale_order_invoicing_finished_task
-#: code:addons/sale_order_invoicing_finished_task/models/project.py:65
+#: code:addons/sale_order_invoicing_finished_task/models/project.py:0
 #, python-format
-msgid ""
-"You cannot create/modify a task related with a invoiced, done or cancel sale "
-"order line "
+msgid "You cannot create/modify a task related with a invoiced, done or cancel sale order line "
 msgstr ""
+
