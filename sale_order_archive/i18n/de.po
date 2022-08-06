@@ -1,20 +1,20 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# 	* sale_order_archive
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2019-07-16 10:43+0000\n"
-"Last-Translator: Maria Sparenberg <maria.sparenberg@gmx.net>\n"
-"Language-Team: none\n"
-"Language: de\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_archive/i18n/sale_order_archive.pot\n"
+"X-Crowdin-File-ID: 5166\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 22:00\n"
 
 #. module: sale_order_archive
 #: model:ir.model.fields,field_description:sale_order_archive.field_sale_order__active
@@ -24,7 +24,7 @@ msgstr "Aktiv"
 #. module: sale_order_archive
 #: model_terms:ir.ui.view,arch_db:sale_order_archive.sale_order_archive_search_view
 msgid "Archived"
-msgstr "Archiviert"
+msgstr ""
 
 #. module: sale_order_archive
 #: code:addons/sale_order_archive/models/sale_order.py:0
@@ -34,6 +34,6 @@ msgstr ""
 
 #. module: sale_order_archive
 #: model:ir.model,name:sale_order_archive.model_sale_order
-#, fuzzy
 msgid "Sales Order"
-msgstr "Verkaufsauftrag"
+msgstr "Kundenauftrag"
+
