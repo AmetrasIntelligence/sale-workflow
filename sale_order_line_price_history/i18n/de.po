@@ -1,25 +1,25 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# 	* sale_order_line_price_history
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2019-07-15 13:43+0000\n"
-"Last-Translator: Maria Sparenberg <maria.sparenberg@gmx.net>\n"
-"Language-Team: none\n"
-"Language: de\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_line_price_history/i18n/sale_order_line_price_history.pot\n"
+"X-Crowdin-File-ID: 5192\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 22:00\n"
 
 #. module: sale_order_line_price_history
 #: model_terms:ir.ui.view,arch_db:sale_order_line_price_history.sale_order_line_price_history_view_form
 msgid "Close"
-msgstr "Schließen"
+msgstr "schließen"
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history__create_uid
@@ -35,10 +35,10 @@ msgstr "Erstellt am"
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,help:sale_order_line_price_history.field_sale_order_line_price_history_line__sale_order_date_order
-msgid ""
-"Creation date of draft/sent orders,\n"
+msgid "Creation date of draft/sent orders,\n"
 "Confirmation date of confirmed orders."
-msgstr ""
+msgstr "Erstellungsdatum von gezeichneten/gesendeten Aufträgen,\n"
+"Bestätigungsdatum von bestätigten Aufträgen."
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line__order_partner_id
@@ -50,7 +50,7 @@ msgstr "Kunde"
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__discount
 msgid "Discount (%)"
-msgstr ""
+msgstr "Rabatt (%)"
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history__display_name
@@ -61,12 +61,12 @@ msgstr "Anzeigename"
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__history_id
 msgid "History"
-msgstr "Historie"
+msgstr ""
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history__line_ids
 msgid "History lines"
-msgstr "Historienzeilen"
+msgstr ""
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history__id
@@ -92,9 +92,7 @@ msgstr "Angebote berücksichtigen"
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,help:sale_order_line_price_history.field_sale_order_line_price_history__include_quotations
 msgid "Include quotations lines in the sale history"
-msgstr ""
-"Wenn der Haken gesetzt ist, werden auch die Positionen aus Angeboten "
-"angezeigt."
+msgstr "Wenn der Haken gesetzt ist, werden auch die Positionen aus Angeboten angezeigt."
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history____last_update
@@ -117,12 +115,12 @@ msgstr "Zuletzt aktualisiert am"
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__sale_order_date_order
 msgid "Order Date"
-msgstr "Auftragsdatum"
+msgstr "Bestelldatum"
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__order_id
 msgid "Order Reference"
-msgstr "Auftragsnummer"
+msgstr ""
 
 #. module: sale_order_line_price_history
 #: model:ir.actions.act_window,name:sale_order_line_price_history.sale_order_line_price_history_action
@@ -137,7 +135,7 @@ msgstr "Produkt"
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__product_uom_qty
 msgid "Quantity"
-msgstr ""
+msgstr "Menge"
 
 #. module: sale_order_line_price_history
 #: model_terms:ir.ui.view,arch_db:sale_order_line_price_history.sale_order_line_price_history_view_form
@@ -148,7 +146,7 @@ msgstr "Verkaufshistorie"
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history__sale_order_line_id
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__sale_order_line_id
 msgid "Sale order line"
-msgstr "Auftragszeile"
+msgstr ""
 
 #. module: sale_order_line_price_history
 #: model:ir.model,name:sale_order_line_price_history.model_sale_order_line_price_history
@@ -163,31 +161,20 @@ msgstr "Preishistorienzeile der Auftragszeile"
 #. module: sale_order_line_price_history
 #: model:ir.model,name:sale_order_line_price_history.model_sale_order_line
 msgid "Sales Order Line"
-msgstr ""
+msgstr "Kundenauftragszeile"
 
 #. module: sale_order_line_price_history
 #: model_terms:ir.ui.view,arch_db:sale_order_line_price_history.sale_order_line_price_history_view_form
 msgid "Set price"
-msgstr "Preis verwenden"
+msgstr ""
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__price_unit
 msgid "Unit Price"
-msgstr "Preis pro ME"
+msgstr "Stückpreis"
 
 #. module: sale_order_line_price_history
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__history_sale_order_line_id
 msgid "history sale order line"
 msgstr "Historie der Auftragszeile"
 
-#~ msgid "Ordered Quantity"
-#~ msgstr "Auftragsmenge"
-
-#~ msgid "Price history"
-#~ msgstr "Preishistorie"
-
-#~ msgid ""
-#~ "You can find a customer by its Name, TIN, Email or Internal Reference."
-#~ msgstr ""
-#~ "Ein Kunde kann anhand seines Namens, seiner Steuer-ID, Emailadresse oder "
-#~ "internen Referenz gefunden werden."
