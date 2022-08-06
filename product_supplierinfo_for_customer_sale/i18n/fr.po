@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ametras-xsolutions\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/product_supplierinfo_for_customer_sale/i18n/product_supplierinfo_for_customer_sale.pot\n"
+"X-Crowdin-File-ID: 5106\n"
+"Language: fr_FR\n"
+"PO-Revision-Date: 2022-08-06 21:59\n"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_sale_order_line__product_customer_code
+msgid "Product Customer Code"
+msgstr "Code client du produit"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model,name:product_supplierinfo_for_customer_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de commande client"
+
