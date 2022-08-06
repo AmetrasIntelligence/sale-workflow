@@ -1,24 +1,20 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * sale_cancel_reason
-#
-# Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2017
-# guillaume bauer <guillaume.bauer@syentys.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-23 01:51+0000\n"
-"PO-Revision-Date: 2021-11-12 09:44+0000\n"
-"Last-Translator: Vincent Hatakeyama <vincent+github@hatakeyama.fr>\n"
-"Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
-"Language: fr\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_cancel_reason/i18n/sale_cancel_reason.pot\n"
+"X-Crowdin-File-ID: 5120\n"
+"Language: fr_FR\n"
+"PO-Revision-Date: 2022-08-06 21:59\n"
 
 #. module: sale_cancel_reason
 #: model:ir.model,name:sale_cancel_reason.model_sale_order_cancel
@@ -42,11 +38,9 @@ msgstr "Motif d’annulation :"
 
 #. module: sale_cancel_reason
 #: model_terms:ir.ui.view,arch_db:sale_cancel_reason.view_sale_order_cancel
-msgid ""
-"Choose the reason for the cancellation of the\n"
+msgid "Choose the reason for the cancellation of the\n"
 "                sale order."
-msgstr ""
-"Choisissez un motif d'annulation du \n"
+msgstr "Choisissez un motif d'annulation du \n"
 "                bon de commande."
 
 #. module: sale_cancel_reason
@@ -70,13 +64,13 @@ msgstr "Créé le"
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel__display_name
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel_reason__display_name
 msgid "Display Name"
-msgstr "Afficher le nom"
+msgstr "Nom d'affichage"
 
 #. module: sale_cancel_reason
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel__id
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel_reason__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: sale_cancel_reason
 #: model:sale.order.cancel.reason,name:sale_cancel_reason.cancel_reason_only_quotation
@@ -93,13 +87,13 @@ msgstr "Dernière modification le"
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel__write_uid
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel_reason__write_uid
 msgid "Last Updated by"
-msgstr "Modifié par"
+msgstr "Dernière mise à jour par"
 
 #. module: sale_cancel_reason
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel__write_date
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel_reason__write_date
 msgid "Last Updated on"
-msgstr "Modifié le"
+msgstr "Dernière mise à jour le"
 
 #. module: sale_cancel_reason
 #: model:sale.order.cancel.reason,name:sale_cancel_reason.cancel_reason_other_provider
@@ -124,13 +118,6 @@ msgid "Reason for the cancellation"
 msgstr "Motif de l'annulation"
 
 #. module: sale_cancel_reason
-#: model:ir.model,name:sale_cancel_reason.model_sale_order
-#, fuzzy
-#| msgid "Sales Order"
-msgid "Sale Order"
-msgstr "Bon de commande"
-
-#. module: sale_cancel_reason
 #: model:ir.actions.act_window,name:sale_cancel_reason.action_sale_order_cancel_reason
 #: model:ir.model,name:sale_cancel_reason.model_sale_order_cancel_reason
 msgid "Sale Order Cancel Reason"
@@ -144,6 +131,11 @@ msgid "Sale Order Cancel Reasons"
 msgstr "Motifs d'annulation du bon de commande"
 
 #. module: sale_cancel_reason
+#: model:ir.model,name:sale_cancel_reason.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: sale_cancel_reason
 #: model:sale.order.cancel.reason,name:sale_cancel_reason.cancel_reason_no_service_needed
 msgid "Service no longer needed"
 msgstr "Demande plus d'actualité"
@@ -152,3 +144,4 @@ msgstr "Demande plus d'actualité"
 #: model_terms:ir.ui.view,arch_db:sale_cancel_reason.view_sale_order_cancel
 msgid "or"
 msgstr "ou"
+
