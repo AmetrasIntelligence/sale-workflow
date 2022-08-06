@@ -1,27 +1,25 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# 	* sale_coupon_product_management
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 13.0+e\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-12 13:55+0000\n"
-"PO-Revision-Date: 2021-11-12 09:44+0000\n"
-"Last-Translator: Vincent Hatakeyama <vincent+github@hatakeyama.fr>\n"
-"Language-Team: \n"
-"Language: fr\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_coupon_product_management/i18n/sale_coupon_product_management.pot\n"
+"X-Crowdin-File-ID: 5136\n"
+"Language: fr_FR\n"
+"PO-Revision-Date: 2022-08-06 21:59\n"
 
 #. module: sale_coupon_product_management
 #: model:ir.model.fields,field_description:sale_coupon_product_management.field_product_category__default_promotion_next_order_category
 msgid "Default Promotion Next Order Category"
-msgstr ""
-"Catégorie par défaut pour promotion applicable sur une commande ultérieure"
+msgstr "Catégorie par défaut pour promotion applicable sur une commande ultérieure"
 
 #. module: sale_coupon_product_management
 #: model:ir.model.fields,field_description:sale_coupon_product_management.field_sale_coupon_program__discount_line_product_chosen
@@ -42,9 +40,7 @@ msgstr "Forcer la référence interne du produit"
 #: code:addons/sale_coupon_product_management/models/product_product.py:0
 #, python-format
 msgid "Invalid 'Can be sold' value corresponding to program category options."
-msgstr ""
-"Valeur invalide « Peut être vendu » correspondant aux options de la "
-"catégorie de programme."
+msgstr "Valeur invalide « Peut être vendu » correspondant aux options de la catégorie de programme."
 
 #. module: sale_coupon_product_management
 #: model:ir.model.fields,field_description:sale_coupon_product_management.field_product_category__is_program_category
@@ -54,12 +50,12 @@ msgstr "Est une catégorie de programme"
 #. module: sale_coupon_product_management
 #: model:ir.model,name:sale_coupon_product_management.model_product_product
 msgid "Product"
-msgstr "Article"
+msgstr "Produit"
 
 #. module: sale_coupon_product_management
 #: model:ir.model,name:sale_coupon_product_management.model_product_category
 msgid "Product Category"
-msgstr "Catégorie d'article"
+msgstr "catégorie de produit"
 
 #. module: sale_coupon_product_management
 #: model_terms:ir.ui.view,arch_db:sale_coupon_product_management.sale_coupon_program_view_form_common
@@ -68,13 +64,8 @@ msgstr "Information produit"
 
 #. module: sale_coupon_product_management
 #: model:ir.model.fields,help:sale_coupon_product_management.field_sale_coupon_program__discount_line_product_readonly_id
-msgid ""
-"Product used in the sales order to apply the discount. Each coupon program "
-"has its own reward product for reporting purpose"
-msgstr ""
-"Le produit utilisé pour appliquer la remise sur le bon de commande. Tous les "
-"programmes de coupons possèdent un produit de récompense spécifique afin de "
-"permettre leur différenciation."
+msgid "Product used in the sales order to apply the discount. Each coupon program has its own reward product for reporting purpose"
+msgstr "Le produit utilisé pour appliquer la remise sur le bon de commande. Tous les programmes de coupons possèdent un produit de récompense spécifique afin de permettre leur différenciation."
 
 #. module: sale_coupon_product_management
 #: model:ir.model.fields,field_description:sale_coupon_product_management.field_product_category__program_product_discount_fixed_amount
@@ -95,29 +86,23 @@ msgstr "Produit de ligne de récompense"
 
 #. module: sale_coupon_product_management
 #: model:ir.model.fields,field_description:sale_coupon_product_management.field_sale_coupon_program__discount_line_product_readonly_id
-#, fuzzy
 msgid "Reward Line Product Readonly"
-msgstr "Produit de ligne de récompense"
+msgstr ""
 
 #. module: sale_coupon_product_management
 #: model:ir.model,name:sale_coupon_product_management.model_sale_coupon_program
 msgid "Sales Coupon Program"
-msgstr "Programme de coupon de vente"
+msgstr "Campagne de bons de réduction"
 
 #. module: sale_coupon_product_management
 #: code:addons/sale_coupon_product_management/models/sale_coupon_program.py:0
 #, python-format
 msgid "This reward line product is already used into another program."
-msgstr ""
-"Ce produit de ligne de récompense est déjà utilisé dans un autre programme."
+msgstr "Ce produit de ligne de récompense est déjà utilisé dans un autre programme."
 
 #. module: sale_coupon_product_management
 #: code:addons/sale_coupon_product_management/models/sale_coupon_program.py:0
 #, python-format
-msgid ""
-"With 'program_product_discount_fixed_amount' category, the reward type must "
-"be 'discount' and the discount type must be 'Fixed Amount'."
-msgstr ""
-"Avec une catégorie 'Prix de vente du produit défini sur le programme', le "
-"type de remise doit être 'remise' and le type de remise doit être 'Prix "
-"fixe'."
+msgid "With 'program_product_discount_fixed_amount' category, the reward type must be 'discount' and the discount type must be 'Fixed Amount'."
+msgstr "Avec une catégorie 'Prix de vente du produit défini sur le programme', le type de remise doit être 'remise' and le type de remise doit être 'Prix fixe'."
+
