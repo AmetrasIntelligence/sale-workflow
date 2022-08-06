@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ametras-xsolutions\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_priority/i18n/sale_order_priority.pot\n"
+"X-Crowdin-File-ID: 5196\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 22:01\n"
+
+#. module: sale_order_priority
+#: model:ir.model.fields.selection,name:sale_order_priority.selection__sale_order__priority__1
+#: model:ir.model.fields.selection,name:sale_order_priority.selection__sale_order_line__priority__1
+msgid "Normal"
+msgstr "Normalversand"
+
+#. module: sale_order_priority
+#: model:ir.model.fields.selection,name:sale_order_priority.selection__sale_order__priority__0
+#: model:ir.model.fields.selection,name:sale_order_priority.selection__sale_order_line__priority__0
+msgid "Not urgent"
+msgstr ""
+
+#. module: sale_order_priority
+#: model:ir.model.fields,field_description:sale_order_priority.field_sale_order__priority
+#: model:ir.model.fields,field_description:sale_order_priority.field_sale_order_line__priority
+msgid "Priority"
+msgstr "Priorität"
+
+#. module: sale_order_priority
+#: model:ir.model.fields,help:sale_order_priority.field_sale_order__priority
+msgid "Priority for this sale order. Setting manually a value here would set it as priority for all the order lines"
+msgstr ""
+
+#. module: sale_order_priority
+#: model:ir.model,name:sale_order_priority.model_sale_order
+msgid "Sales Order"
+msgstr "Kundenauftrag"
+
+#. module: sale_order_priority
+#: model:ir.model,name:sale_order_priority.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Kundenauftragszeile"
+
+#. module: sale_order_priority
+#: model:ir.model.fields.selection,name:sale_order_priority.selection__sale_order__priority__2
+#: model:ir.model.fields.selection,name:sale_order_priority.selection__sale_order_line__priority__2
+msgid "Urgent"
+msgstr ""
+
+#. module: sale_order_priority
+#: model:ir.model.fields.selection,name:sale_order_priority.selection__sale_order__priority__3
+#: model:ir.model.fields.selection,name:sale_order_priority.selection__sale_order_line__priority__3
+msgid "Very Urgent"
+msgstr ""
+
