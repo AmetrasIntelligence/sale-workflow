@@ -1,24 +1,20 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * sale_automatic_workflow
-#
-# Translators:
-# OCA Transbot <transbot@odoo-community.org>, 2018
-# Quentin THEURET <odoo@kerpeo.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-02 10:22+0000\n"
-"PO-Revision-Date: 2021-11-12 09:44+0000\n"
-"Last-Translator: Vincent Hatakeyama <vincent+github@hatakeyama.fr>\n"
-"Language-Team: French (https://www.transifex.com/oca/teams/23907/fr/)\n"
-"Language: fr\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_automatic_workflow/i18n/sale_automatic_workflow.pot\n"
+"X-Crowdin-File-ID: 5108\n"
+"Language: fr_FR\n"
+"PO-Revision-Date: 2022-08-06 21:59\n"
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_order__all_qty_delivered
@@ -73,12 +69,8 @@ msgstr "Informations d'automatisation"
 
 #. module: sale_automatic_workflow
 #: model:sale.workflow.process,warning:sale_automatic_workflow.automatic_validation
-msgid ""
-"Be careful, if you save the order with this setting, it could be auto-"
-"confirmed, even if you are editing it."
-msgstr ""
-"Faites attention, si vous sauvegardez la commande avec ce paramètre, cela "
-"pourrait être confirmé automatiquement, même si vous la modifiée."
+msgid "Be careful, if you save the order with this setting, it could be auto-confirmed, even if you are editing it."
+msgstr "Faites attention, si vous sauvegardez la commande avec ce paramètre, cela pourrait être confirmé automatiquement, même si vous la modifiée."
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__validate_picking
@@ -88,7 +80,7 @@ msgstr "Confirmez et transférez la préparation de commande"
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__create_invoice
 msgid "Create Invoice"
-msgstr "Créer les factures"
+msgstr ""
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__create_invoice_filter_id
@@ -126,7 +118,7 @@ msgstr "Livrer chaque article dès disponibilité"
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_automatic_workflow_job__display_name
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__display_name
 msgid "Display Name"
-msgstr "Afficher le nom"
+msgstr "Nom d'affichage"
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__invoice_date_is_order_date
@@ -137,24 +129,17 @@ msgstr "Forcer la date de facturation"
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_automatic_workflow_job__id
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,help:sale_automatic_workflow.field_sale_workflow_process__warning
-msgid ""
-"If set, displays the message when an userselects the process on a sale order"
-msgstr ""
-"Si configuré, affiche le message lorsqu'un utilisateur choisit le processus "
-"sur un bon de commande"
+msgid "If set, displays the message when an userselects the process on a sale order"
+msgstr "Si configuré, affiche le message lorsqu'un utilisateur choisit le processus sur un bon de commande"
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,help:sale_automatic_workflow.field_sale_workflow_process__invoice_service_delivery
-msgid ""
-"If this box is checked, when the first invoice is created The service sale "
-"order lines will be included and will be marked as delivered"
-msgstr ""
-"Si cette case est cochée, lorsque la première facture est créée, les lignes "
-"articles du bon de commande seront incluses et marquées comme livrées"
+msgid "If this box is checked, when the first invoice is created The service sale order lines will be included and will be marked as delivered"
+msgstr "Si cette case est cochée, lorsque la première facture est créée, les lignes articles du bon de commande seront incluses et marquées comme livrées"
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__invoice_service_delivery
@@ -164,7 +149,7 @@ msgstr "Comptabilisation de la facture à la livraison"
 #. module: sale_automatic_workflow
 #: model:ir.model,name:sale_automatic_workflow.model_account_move
 msgid "Journal Entries"
-msgstr ""
+msgstr "Entrées de journal"
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_automatic_workflow_job____last_update
@@ -176,13 +161,13 @@ msgstr "Dernière modification le"
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_automatic_workflow_job__write_uid
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__write_uid
 msgid "Last Updated by"
-msgstr "Modifié par"
+msgstr "Dernière mise à jour par"
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_automatic_workflow_job__write_date
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__write_date
 msgid "Last Updated on"
-msgstr "Modifié le"
+msgstr "Dernière mise à jour le"
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__name
@@ -212,7 +197,7 @@ msgstr ""
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__picking_filter_id
 msgid "Picking Filter"
-msgstr "Filtre de préparation de commande"
+msgstr ""
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__picking_filter_domain
@@ -222,7 +207,7 @@ msgstr "Domaine du filtre de préparation de commande"
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__register_payment
 msgid "Register Payment"
-msgstr ""
+msgstr "Enregistrer le paiement"
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__payment_filter_id
@@ -264,13 +249,11 @@ msgstr "Bon de commande"
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__team_id
 msgid "Sales Team"
-msgstr "Équipe commerciale"
+msgstr "Équipe de vente"
 
 #. module: sale_automatic_workflow
 #: model:ir.model,name:sale_automatic_workflow.model_automatic_workflow_job
-msgid ""
-"Scheduler that will play automatically the validation of invoices, "
-"pickings..."
+msgid "Scheduler that will play automatically the validation of invoices, pickings..."
 msgstr ""
 
 #. module: sale_automatic_workflow
@@ -296,12 +279,12 @@ msgstr "Politique d'expédition"
 #. module: sale_automatic_workflow
 #: model:ir.model,name:sale_automatic_workflow.model_stock_move
 msgid "Stock Move"
-msgstr "Mouvement de stock"
+msgstr "Mouvement du stock"
 
 #. module: sale_automatic_workflow
 #: model:ir.model,name:sale_automatic_workflow.model_stock_picking
 msgid "Transfer"
-msgstr "Transférer"
+msgstr ""
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__validate_invoice
@@ -326,22 +309,17 @@ msgstr "Confirmer les commandes"
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,field_description:sale_automatic_workflow.field_sale_workflow_process__warning
 msgid "Warning Message"
-msgstr "Message d'avertissement"
+msgstr ""
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,help:sale_automatic_workflow.field_sale_workflow_process__send_order_confirmation_mail
-msgid ""
-"When checked, after order confirmation, a confirmation email will be sent "
-"(if not already sent)."
-msgstr ""
-"Si coché, après la confirmation de la commande, un courriel de confirmation "
-"sera envoyé (s’il n’a pas déjà été envoyé)."
+msgid "When checked, after order confirmation, a confirmation email will be sent (if not already sent)."
+msgstr "Si coché, après la confirmation de la commande, un courriel de confirmation sera envoyé (s’il n’a pas déjà été envoyé)."
 
 #. module: sale_automatic_workflow
 #: model:ir.model.fields,help:sale_automatic_workflow.field_sale_workflow_process__invoice_date_is_order_date
 msgid "When checked, the invoice date will be the same than the order's date"
-msgstr ""
-"Si coché, la date de facturation sera identique à la date de la commande"
+msgstr "Si coché, la date de facturation sera identique à la date de la commande"
 
 #. module: sale_automatic_workflow
 #: model_terms:ir.ui.view,arch_db:sale_automatic_workflow.sale_workflow_process_view_form
@@ -354,11 +332,3 @@ msgstr "Options du flux automatique"
 msgid "Workflow Warning"
 msgstr "Message d'avertissement"
 
-#~ msgid "Invoice"
-#~ msgstr "Facture"
-
-#~ msgid "Quotation"
-#~ msgstr "Quotation"
-
-#~ msgid "automatic.workflow.job"
-#~ msgstr "automatic.workflow.job"
