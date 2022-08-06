@@ -1,20 +1,20 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# 	* sale_elaboration
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0\n"
+"Project-Id-Version: ametras-xsolutions\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2019-07-17 11:43+0000\n"
-"Last-Translator: Maria Sparenberg <maria.sparenberg@gmx.net>\n"
-"Language-Team: none\n"
-"Language: de\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: ametras-xsolutions\n"
+"X-Crowdin-Project-ID: 530964\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_elaboration/i18n/sale_elaboration.pot\n"
+"X-Crowdin-File-ID: 5144\n"
+"Language: de_DE\n"
+"PO-Revision-Date: 2022-08-06 21:59\n"
 
 #. module: sale_elaboration
 #: model_terms:ir.ui.view,arch_db:sale_elaboration.report_delivery_document
@@ -29,7 +29,7 @@ msgstr ""
 #. module: sale_elaboration
 #: model:ir.model.fields,field_description:sale_elaboration.field_product_elaboration__active
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #. module: sale_elaboration
 #: model_terms:ir.ui.view,arch_db:sale_elaboration.view_sales_order_line_filter
@@ -53,15 +53,15 @@ msgstr "Erstellt am"
 
 #. module: sale_elaboration
 #: model:ir.model.fields,help:sale_elaboration.field_sale_order_line__date_order
-msgid ""
-"Creation date of draft/sent orders,\n"
+msgid "Creation date of draft/sent orders,\n"
 "Confirmation date of confirmed orders."
-msgstr ""
+msgstr "Erstellungsdatum von gezeichneten/gesendeten Aufträgen,\n"
+"Bestätigungsdatum von bestätigten Aufträgen."
 
 #. module: sale_elaboration
 #: model:ir.model.fields,field_description:sale_elaboration.field_sale_order_line__date_order
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #. module: sale_elaboration
 #: model:ir.model.fields,field_description:sale_elaboration.field_product_elaboration__display_name
@@ -99,9 +99,7 @@ msgstr "ID"
 
 #. module: sale_elaboration
 #: model:ir.model.fields,help:sale_elaboration.field_product_elaboration__active
-msgid ""
-"If unchecked, it will allow you to hide the product elaborations without "
-"removing it."
+msgid "If unchecked, it will allow you to hide the product elaborations without removing it."
 msgstr ""
 
 #. module: sale_elaboration
@@ -134,7 +132,7 @@ msgstr "Zuletzt aktualisiert am"
 #. module: sale_elaboration
 #: model:ir.model.fields,field_description:sale_elaboration.field_product_elaboration__name
 msgid "Name"
-msgstr "Bezeichnung"
+msgstr "Name"
 
 #. module: sale_elaboration
 #: model:ir.model.constraint,message:sale_elaboration.constraint_product_elaboration_name_uniq
@@ -153,9 +151,8 @@ msgstr "Produktvorlage"
 
 #. module: sale_elaboration
 #: model:ir.model,name:sale_elaboration.model_product_elaboration
-#, fuzzy
 msgid "Product elaborations"
-msgstr "Produktvorlage"
+msgstr ""
 
 #. module: sale_elaboration
 #: model:ir.actions.act_window,name:sale_elaboration.sale_elaboration_action_form
@@ -172,12 +169,12 @@ msgstr ""
 #. module: sale_elaboration
 #: model:ir.model,name:sale_elaboration.model_sale_order
 msgid "Sales Order"
-msgstr ""
+msgstr "Kundenauftrag"
 
 #. module: sale_elaboration
 #: model:ir.model,name:sale_elaboration.model_sale_order_line
 msgid "Sales Order Line"
-msgstr ""
+msgstr "Kundenauftragszeile"
 
 #. module: sale_elaboration
 #: model:ir.model.fields,field_description:sale_elaboration.field_product_elaboration__code
@@ -189,5 +186,3 @@ msgstr ""
 msgid "Transfer"
 msgstr ""
 
-#~ msgid "Quotation"
-#~ msgstr "Angebot"
