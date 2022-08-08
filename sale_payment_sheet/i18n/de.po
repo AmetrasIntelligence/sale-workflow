@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_payment_sheet/i18n/sale_payment_sheet.pot\n"
 "X-Crowdin-File-ID: 5224\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 23:55\n"
+"PO-Revision-Date: 2022-08-08 02:08\n"
 
 #. module: sale_payment_sheet
 #: model:ir.actions.report,print_report_name:sale_payment_sheet.action_report_sale_payment_sheet
@@ -271,7 +271,7 @@ msgstr "Fehler beim Versenden der Nachrichten"
 #. module: sale_payment_sheet
 #: model:ir.model.fields,field_description:sale_payment_sheet.field_sale_payment_sheet__message_ids
 msgid "Messages"
-msgstr "Mitteilungen"
+msgstr "Nachrichten"
 
 #. module: sale_payment_sheet
 #: model:ir.model.fields.selection,name:sale_payment_sheet.selection__sale_payment_sheet__state__open
