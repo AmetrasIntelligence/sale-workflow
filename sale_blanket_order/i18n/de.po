@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_blanket_order/i18n/sale_blanket_order.pot\n"
 "X-Crowdin-File-ID: 5116\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 23:54\n"
+"PO-Revision-Date: 2022-08-08 02:07\n"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -427,7 +427,7 @@ msgstr "Fehler beim Versenden der Nachrichten"
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__message_ids
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__message_ids
 msgid "Messages"
-msgstr "Mitteilungen"
+msgstr "Nachrichten"
 
 #. module: sale_blanket_order
 #: code:addons/sale_blanket_order/models/blanket_orders.py:0
