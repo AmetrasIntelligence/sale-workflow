@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_cancel_reason/i18n/sale_cancel_reason.pot\n"
 "X-Crowdin-File-ID: 5120\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 21:59\n"
+"PO-Revision-Date: 2022-08-08 22:42\n"
 
 #. module: sale_cancel_reason
 #: model:ir.model,name:sale_cancel_reason.model_sale_order_cancel
@@ -45,7 +45,7 @@ msgstr "Bitte den Grund für das Stornieren des Angebots / Auftrags auswählen."
 #. module: sale_cancel_reason
 #: model_terms:ir.ui.view,arch_db:sale_cancel_reason.view_sale_order_cancel
 msgid "Confirm"
-msgstr "bestätigen"
+msgstr "Bestätigen"
 
 #. module: sale_cancel_reason
 #: model:ir.model.fields,field_description:sale_cancel_reason.field_sale_order_cancel__create_uid
