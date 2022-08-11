@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_type/i18n/sale_order_type.pot\n"
 "X-Crowdin-File-ID: 5214\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 23:55\n"
+"PO-Revision-Date: 2022-08-11 15:41\n"
 
 #. module: sale_order_type
 #: model:ir.model.fields,field_description:sale_order_type.field_sale_order_type__journal_id
@@ -113,7 +113,7 @@ msgstr "Normaler Auftrag"
 #: model:ir.model.fields,field_description:sale_order_type.field_sale_order_type__payment_term_id
 #: model_terms:ir.ui.view,arch_db:sale_order_type.sot_sale_order_type_search_view
 msgid "Payment Term"
-msgstr ""
+msgstr "Zahlungsbedingung"
 
 #. module: sale_order_type
 #: model_terms:ir.ui.view,arch_db:sale_order_type.sot_sale_order_type_search_view
