@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_line_price_history/i18n/sale_order_line_price_history.pot\n"
 "X-Crowdin-File-ID: 5192\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 22:00\n"
+"PO-Revision-Date: 2022-08-11 11:14\n"
 
 #. module: sale_order_line_price_history
 #: model_terms:ir.ui.view,arch_db:sale_order_line_price_history.sale_order_line_price_history_view_form
@@ -146,7 +146,7 @@ msgstr "Verkaufshistorie"
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history__sale_order_line_id
 #: model:ir.model.fields,field_description:sale_order_line_price_history.field_sale_order_line_price_history_line__sale_order_line_id
 msgid "Sale order line"
-msgstr ""
+msgstr "Verkaufsauftragszeilen"
 
 #. module: sale_order_line_price_history
 #: model:ir.model,name:sale_order_line_price_history.model_sale_order_line_price_history
