@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_line_input/i18n/sale_order_line_input.pot\n"
 "X-Crowdin-File-ID: 5188\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 22:00\n"
+"PO-Revision-Date: 2022-08-11 15:40\n"
 
 #. module: sale_order_line_input
 #: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
@@ -24,7 +24,7 @@ msgstr ""
 #. module: sale_order_line_input
 #: model_terms:ir.ui.view,arch_db:sale_order_line_input.view_sales_order_line_input_tree
 msgid "Disc.%"
-msgstr ""
+msgstr "Rab.%"
 
 #. module: sale_order_line_input
 #: model:ir.model.fields,help:sale_order_line_input.field_sale_order_line__pricelist_id
