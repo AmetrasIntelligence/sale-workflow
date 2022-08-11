@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_exception/i18n/sale_exception.pot\n"
 "X-Crowdin-File-ID: 5146\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-08 22:42\n"
+"PO-Revision-Date: 2022-08-11 11:14\n"
 
 #. module: sale_exception
 #: model_terms:ir.ui.view,arch_db:sale_exception.view_order_form
@@ -195,7 +195,7 @@ msgstr "Verkaufsauftrag"
 #. module: sale_exception
 #: model:ir.model.fields.selection,name:sale_exception.selection__exception_rule__model__sale_order_line
 msgid "Sale order line"
-msgstr ""
+msgstr "Verkaufsauftragszeilen"
 
 #. module: sale_exception
 #: model:ir.model.fields,field_description:sale_exception.field_exception_rule__sale_ids
