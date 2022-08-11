@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_general_discount/i18n/sale_order_general_discount.pot\n"
 "X-Crowdin-File-ID: 5172\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 22:00\n"
+"PO-Revision-Date: 2022-08-11 11:14\n"
 
 #. module: sale_order_general_discount
 #: model:ir.model,name:sale_order_general_discount.model_res_partner
@@ -25,7 +25,7 @@ msgstr "Kontakt"
 #: model:ir.model.fields,field_description:sale_order_general_discount.field_res_partner__sale_discount
 #: model:ir.model.fields,field_description:sale_order_general_discount.field_res_users__sale_discount
 msgid "Discount"
-msgstr ""
+msgstr "Rabatt"
 
 #. module: sale_order_general_discount
 #: model:ir.model.fields,field_description:sale_order_general_discount.field_sale_order__general_discount
