@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_product_set/i18n/sale_product_set.pot\n"
 "X-Crowdin-File-ID: 5232\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-11 11:14\n"
+"PO-Revision-Date: 2022-08-12 08:03\n"
 
 #. module: sale_product_set
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set__active
@@ -184,7 +184,7 @@ msgstr "Dies ist der Name des Produktssets."
 #. module: sale_product_set
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set__set_line_ids
 msgid "Products"
-msgstr ""
+msgstr "Produkte"
 
 #. module: sale_product_set
 #: model:ir.model.fields,field_description:sale_product_set.field_product_set_add__quantity
