@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_product_recommendation/i18n/sale_order_product_recommendation.pot\n"
 "X-Crowdin-File-ID: 5202\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 22:01\n"
+"PO-Revision-Date: 2022-08-12 08:03\n"
 
 #. module: sale_order_product_recommendation
 #: model_terms:ir.ui.view,arch_db:sale_order_product_recommendation.res_config_settings_view_form_sale
@@ -178,7 +178,7 @@ msgstr ""
 #. module: sale_order_product_recommendation
 #: model:ir.model.fields,field_description:sale_order_product_recommendation.field_sale_order_recommendation__line_ids
 msgid "Products"
-msgstr ""
+msgstr "Produkte"
 
 #. module: sale_order_product_recommendation
 #: model_terms:ir.ui.view,arch_db:sale_order_product_recommendation.view_order_form
