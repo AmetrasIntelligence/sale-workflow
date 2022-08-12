@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_product_multi_add/i18n/sale_product_multi_add.pot\n"
 "X-Crowdin-File-ID: 5230\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 22:00\n"
+"PO-Revision-Date: 2022-08-12 08:03\n"
 
 #. module: sale_product_multi_add
 #: model_terms:ir.ui.view,arch_db:sale_product_multi_add.sale_order_mass_import_form
@@ -89,7 +89,7 @@ msgstr "Produkt"
 #: model_terms:ir.ui.view,arch_db:sale_product_multi_add.view_import_product_to_sale
 #: model_terms:ir.ui.view,arch_db:sale_product_multi_add.view_import_product_to_sale2
 msgid "Products"
-msgstr ""
+msgstr "Produkte"
 
 #. module: sale_product_multi_add
 #: model:ir.model.fields,field_description:sale_product_multi_add.field_sale_import_products_items__quantity
@@ -109,7 +109,7 @@ msgstr ""
 #. module: sale_product_multi_add
 #: model_terms:ir.ui.view,arch_db:sale_product_multi_add.view_import_product_to_sale
 msgid "Sales Price"
-msgstr ""
+msgstr "Verkaufspreis"
 
 #. module: sale_product_multi_add
 #: model_terms:ir.ui.view,arch_db:sale_product_multi_add.view_import_product_to_sale2
