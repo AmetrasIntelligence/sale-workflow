@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_blanket_order/i18n/sale_blanket_order.pot\n"
 "X-Crowdin-File-ID: 5116\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-11 15:40\n"
+"PO-Revision-Date: 2022-08-16 09:42\n"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -24,7 +24,7 @@ msgstr ""
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
 msgid "<strong>Currency:</strong>"
-msgstr ""
+msgstr "<strong>Währung:</strong>"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
