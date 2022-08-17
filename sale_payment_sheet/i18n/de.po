@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_payment_sheet/i18n/sale_payment_sheet.pot\n"
 "X-Crowdin-File-ID: 5224\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-11 15:41\n"
+"PO-Revision-Date: 2022-08-17 15:15\n"
 
 #. module: sale_payment_sheet
 #: model:ir.actions.report,print_report_name:sale_payment_sheet.action_report_sale_payment_sheet
@@ -437,7 +437,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_payment_sheet.field_sale_payment_sheet_line__state
 #: model_terms:ir.ui.view,arch_db:sale_payment_sheet.view_sale_payment_sheet_search
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #. module: sale_payment_sheet
 #: model_terms:ir.ui.view,arch_db:sale_payment_sheet.view_invoice_tree
