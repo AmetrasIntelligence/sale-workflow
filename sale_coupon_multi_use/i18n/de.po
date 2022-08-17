@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_coupon_multi_use/i18n/sale_coupon_multi_use.pot\n"
 "X-Crowdin-File-ID: 5132\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 21:59\n"
+"PO-Revision-Date: 2022-08-17 15:15\n"
 
 #. module: sale_coupon_multi_use
 #: model:ir.model.fields,field_description:sale_coupon_multi_use.field_sale_coupon_consumption_line__amount
@@ -156,5 +156,5 @@ msgstr "Kundenauftragszeile"
 #. module: sale_coupon_multi_use
 #: model:ir.model.fields,field_description:sale_coupon_multi_use.field_sale_coupon_consumption_line__sale_order_state
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
