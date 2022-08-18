@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_isolated_quotation/i18n/sale_isolated_quotation.pot\n"
 "X-Crowdin-File-ID: 5160\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 22:00\n"
+"PO-Revision-Date: 2022-08-18 10:22\n"
 
 #. module: sale_isolated_quotation
 #: model_terms:ir.ui.view,arch_db:sale_isolated_quotation.view_order_form
@@ -24,7 +24,7 @@ msgstr "Abbrechen"
 #. module: sale_isolated_quotation
 #: model_terms:ir.ui.view,arch_db:sale_isolated_quotation.view_order_form
 msgid "Convert to Order"
-msgstr ""
+msgstr "In Bestellung umwandeln"
 
 #. module: sale_isolated_quotation
 #: model:ir.model.fields,help:sale_isolated_quotation.field_sale_order__order_id
