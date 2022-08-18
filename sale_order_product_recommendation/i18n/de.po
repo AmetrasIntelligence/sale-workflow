@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_product_recommendation/i18n/sale_order_product_recommendation.pot\n"
 "X-Crowdin-File-ID: 5202\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-12 08:03\n"
+"PO-Revision-Date: 2022-08-18 14:40\n"
 
 #. module: sale_order_product_recommendation
 #: model_terms:ir.ui.view,arch_db:sale_order_product_recommendation.res_config_settings_view_form_sale
@@ -139,7 +139,7 @@ msgstr ""
 #. module: sale_order_product_recommendation
 #: model:ir.model.fields,field_description:sale_order_product_recommendation.field_sale_order_recommendation__line_amount
 msgid "Number of recommendations"
-msgstr ""
+msgstr "Anzahl Empfehlungen"
 
 #. module: sale_order_product_recommendation
 #: model:ir.model.fields,field_description:sale_order_product_recommendation.field_sale_order_recommendation_line__price_unit
@@ -183,12 +183,12 @@ msgstr "Produkte"
 #. module: sale_order_product_recommendation
 #: model_terms:ir.ui.view,arch_db:sale_order_product_recommendation.view_order_form
 msgid "Recommended Products"
-msgstr ""
+msgstr "Empfohlene Produkte"
 
 #. module: sale_order_product_recommendation
 #: model:ir.actions.act_window,name:sale_order_product_recommendation.sale_order_recommendation_action
 msgid "Recommended Products for this Customer"
-msgstr ""
+msgstr "Empfohlene Produkte für diesen Kunden"
 
 #. module: sale_order_product_recommendation
 #: model:ir.model,name:sale_order_product_recommendation.model_sale_order_recommendation_line
