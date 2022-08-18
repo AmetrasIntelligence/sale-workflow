@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_order_type/i18n/sale_order_type.pot\n"
 "X-Crowdin-File-ID: 5214\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-11 15:41\n"
+"PO-Revision-Date: 2022-08-18 07:57\n"
 
 #. module: sale_order_type
 #: model:ir.model.fields,field_description:sale_order_type.field_sale_order_type__journal_id
@@ -118,7 +118,7 @@ msgstr "Zahlungsbedingung"
 #. module: sale_order_type
 #: model_terms:ir.ui.view,arch_db:sale_order_type.sot_sale_order_type_search_view
 msgid "Price List"
-msgstr ""
+msgstr "Preisliste"
 
 #. module: sale_order_type
 #: model:ir.model.fields,field_description:sale_order_type.field_sale_order_type__pricelist_id
@@ -128,7 +128,7 @@ msgstr ""
 #. module: sale_order_type
 #: model:ir.model.fields,field_description:sale_order_type.field_sale_order_type__route_id
 msgid "Route"
-msgstr ""
+msgstr "Tour"
 
 #. module: sale_order_type
 #: model:ir.model.fields,field_description:sale_order_type.field_res_partner__sale_type
