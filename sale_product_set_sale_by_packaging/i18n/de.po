@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_product_set_sale_by_packaging/i18n/sale_product_set_sale_by_packaging.pot\n"
 "X-Crowdin-File-ID: 5236\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-06 22:00\n"
+"PO-Revision-Date: 2022-08-18 16:00\n"
 
 #. module: sale_product_set_sale_by_packaging
 #: model:ir.actions.server,name:sale_product_set_sale_by_packaging.cron_check_packaging_ir_actions_server
@@ -32,7 +32,7 @@ msgstr ""
 #. module: sale_product_set_sale_by_packaging
 #: model:ir.model.fields,field_description:sale_product_set_sale_by_packaging.field_product_set_line__sell_only_by_packaging
 msgid "Only sell by packaging"
-msgstr ""
+msgstr "Nur mit Verpackung verkaufen"
 
 #. module: sale_product_set_sale_by_packaging
 #: model:ir.model,name:sale_product_set_sale_by_packaging.model_product_product
