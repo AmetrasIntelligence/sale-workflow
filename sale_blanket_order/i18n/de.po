@@ -14,7 +14,7 @@ msgstr ""
 "X-Crowdin-File: /[AmetrasIntelligence.sale-workflow] 13.0/sale_blanket_order/i18n/sale_blanket_order.pot\n"
 "X-Crowdin-File-ID: 5116\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-18 12:21\n"
+"PO-Revision-Date: 2022-08-18 16:00\n"
 
 #. module: sale_blanket_order
 #: model_terms:ir.ui.view,arch_db:sale_blanket_order.report_blanketorder_document
@@ -712,7 +712,7 @@ msgstr "Verkaufsteam"
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order__user_id
 msgid "Salesperson"
-msgstr ""
+msgstr "Verkäufer"
 
 #. module: sale_blanket_order
 #: model:ir.model.fields,field_description:sale_blanket_order.field_sale_blanket_order_line__date_schedule
