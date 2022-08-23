@@ -98,4 +98,4 @@ class SaleOrderLine(models.Model):
     @api.onchange("product_id")
     def product_id_change(self):
         self.product_packaging = False
-        super(SaleOrderLine, self).product_id_change()
+        return super(SaleOrderLine, self).product_id_change()
