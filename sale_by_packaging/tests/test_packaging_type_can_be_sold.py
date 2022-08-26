@@ -24,9 +24,9 @@ class TestPackagingTypeCanBeSold(Common):
         """Check that a product.packaging can be independently set as can be sold.
         """
         exception_msg = (
-            "Packaging Test packaging cannot be sold on product {} must be set "
+            "Packaging .*. must be set "
             "as 'Can be sold' in order to be used on a sale order."
-        ).format(self.product.name)
+        )
         with self.assertRaisesRegex(ValidationError, exception_msg):
             self.order_line.write(
                 {"product_packaging": self.packaging_cannot_be_sold.id}

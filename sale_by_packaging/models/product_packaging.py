@@ -20,6 +20,22 @@ class ProductPackaging(models.Model):
         "quantity to the superior unit (5 for this example).",
     )
 
+    sale_rounding = fields.Float(
+        string="Sale Rounding Precision",
+        digits="Product Unit of Measure",
+        required=True,
+        default=0.1,
+        help="The allowed package quantity will be a multiple of this value. "
+        "Use 1.0 for a package that cannot be further split.",
+    )
+
+    actual_sale_qty = fields.Float(compute="_compute_actual_sale_qty")
+
+    @api.depends("sale_rounding", "qty")
+    def _compute_actual_sale_qty(self):
+        for record in self:
+            record.actual_sale_qty = record.sale_rounding * record.qty
+
     @api.depends("packaging_type_id")
     def _compute_can_be_sold(self):
         for record in self:

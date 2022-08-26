@@ -129,14 +129,3 @@ class TestSaleProductByPackagingOnly(Common):
         self.order_line.product_uom_qty = 40  # 2 packs
         with self.assertRaises(ValidationError):
             self.order_line.product_packaging_qty = 0
-
-    def test_onchange_qty_is_not_pack_multiple(self):
-        """ Check package when qantity is not a multiple of package quantity.
-
-        When the uom quantity is changed for a value not a multpile of a
-        possible package an error is raised.
-        """
-        self.product.write({"sell_only_by_packaging": True})
-        self.order_line.product_uom_qty = 40  # 2 packs
-        with self.assertRaises(ValidationError):
-            self.order_line.product_uom_qty = 18

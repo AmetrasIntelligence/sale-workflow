@@ -22,7 +22,7 @@ class ProductProduct(models.Model):
         if not self or not packaging:
             return qty
         self.ensure_one()
-        if self.sell_only_by_packaging and packaging.force_sale_qty:
+        if packaging.force_sale_qty:
             q = self.uom_id._compute_quantity(packaging.qty, uom)
             if (
                 qty
@@ -42,7 +42,7 @@ class ProductProduct(models.Model):
         """
         self.ensure_one()
         packagings = self._get_packagings_with_multiple_qty(qty)
-        return fields.first(packagings.sorted("qty", reverse=True))
+        return fields.first(packagings.sorted("qty"))
 
     def _get_packagings_with_multiple_qty(self, qty):
         self.ensure_one()
@@ -50,8 +50,5 @@ class ProductProduct(models.Model):
             lambda pack: pack.can_be_sold
             and not float_is_zero(
                 pack.qty, precision_rounding=pack.product_uom_id.rounding
-            )
-            and float_is_zero(
-                qty % pack.qty, precision_rounding=pack.product_uom_id.rounding
             )
         )
