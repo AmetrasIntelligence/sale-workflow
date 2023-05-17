@@ -46,19 +46,11 @@ class SaleOrderLine(models.Model):
         for line in self:
             if not line.product_id.sell_only_by_packaging:
                 continue
-            if (
-                not line.product_packaging
-                or float_compare(
-                    line.product_packaging_qty,
-                    0,
-                    precision_rounding=line.product_id.uom_id.rounding,
-                )
-                <= 0
-            ):
+            if not line.product_packaging:
                 raise ValidationError(
                     _(
-                        "Product %s can only be sold with a packaging and a "
-                        "packaging qantity." % line.product_id.name
+                        "Product %s can only be sold with a packaging."
+                        % line.product_id.name
                     )
                 )
 
