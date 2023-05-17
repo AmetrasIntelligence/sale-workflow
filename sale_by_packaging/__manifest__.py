@@ -3,7 +3,7 @@
 {
     "name": "Sale By Packaging",
     "summary": "Manage sale of packaging",
-    "version": "13.0.1.9.8",
+    "version": "13.0.1.9.9",
     "development_status": "Beta",
     "category": "Warehouse Management",
     "website": "https://github.com/OCA/sale-workflow",
