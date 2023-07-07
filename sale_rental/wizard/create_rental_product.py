@@ -5,8 +5,6 @@
 
 from odoo import _, api, fields, models
 
-import odoo.addons.decimal_precision as dp
-
 
 class CreateRentalProduct(models.TransientModel):
     _name = "create.rental.product"
@@ -37,7 +35,7 @@ class CreateRentalProduct(models.TransientModel):
     sale_price_per_day = fields.Float(
         string="Rental Price per Day",
         required=True,
-        digits=dp.get_precision("Product Price"),
+        digits="Product Price",
         default=1.0,
     )
     categ_id = fields.Many2one(

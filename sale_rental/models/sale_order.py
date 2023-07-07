@@ -11,8 +11,6 @@ from odoo import _, api, fields, models
 from odoo.exceptions import UserError, ValidationError
 from odoo.tools import float_compare
 
-import odoo.addons.decimal_precision as dp
-
 logger = logging.getLogger(__name__)
 
 
@@ -31,7 +29,7 @@ class SaleOrder(models.Model):
             ):
                 initial_end_date = line.extension_rental_id.end_date
                 line.extension_rental_id.in_move_id.write(
-                    {"date_expected": initial_end_date, "date": initial_end_date,}
+                    {"date_expected": initial_end_date, "date": initial_end_date}
                 )
         return res
 
@@ -50,7 +48,7 @@ class SaleOrderLine(models.Model):
     extension_rental_id = fields.Many2one("sale.rental", string="Rental to Extend")
     rental_qty = fields.Float(
         string="Rental Quantity",
-        digits=dp.get_precision("Product Unit of Measure"),
+        digits="Product Unit of Measure",
         help="Indicate the number of items that will be rented.",
     )
     sell_rental_id = fields.Many2one("sale.rental", string="Rental to Sell")
@@ -156,7 +154,7 @@ class SaleOrderLine(models.Model):
         }
         return vals
 
-    def _action_launch_stock_rule(self):
+    def _action_launch_stock_rule(self, previous_product_uom_qty=False):
         errors = []
         for line in self:
             if line.rental_type == "new_rental" and line.product_id.rented_product_id:
@@ -196,7 +194,7 @@ class SaleOrderLine(models.Model):
             ):
                 end_datetime = fields.Datetime.to_datetime(line.end_date)
                 line.extension_rental_id.in_move_id.write(
-                    {"date_expected": end_datetime, "date": end_datetime,}
+                    {"date_expected": end_datetime, "date": end_datetime}
                 )
             elif line.sell_rental_id:
                 if line.sell_rental_id.out_move_id.state != "done":
@@ -213,7 +211,9 @@ class SaleOrderLine(models.Model):
             raise UserError("\n".join(errors))
 
         # call super() at the end, to make procurement_jit work
-        res = super(SaleOrderLine, self)._action_launch_stock_rule()
+        res = super(SaleOrderLine, self)._action_launch_stock_rule(
+            previous_product_uom_qty=previous_product_uom_qty
+        )
         return res
 
     def _prepare_procurement_values(self, group_id=False):
