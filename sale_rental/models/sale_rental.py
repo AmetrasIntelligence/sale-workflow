@@ -24,7 +24,7 @@ class SaleRental(models.Model):
     def name_get(self):
         res = []
         for rental in self:
-            name = "[%s] %s - %s > %s (%s)" % (
+            name = "[{}] {} - {} > {} ({})".format(
                 rental.partner_id.display_name,
                 rental.rented_product_id.display_name,
                 rental.start_date,

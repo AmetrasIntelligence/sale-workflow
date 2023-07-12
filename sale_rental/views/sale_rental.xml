@@ -102,15 +102,7 @@
                     groups="base.group_multi_company"
                     optional="hide"
                 />
-            <field
-                    name="state"
-                    widget="badge"
-                    decoration-success="state == 'in'"
-                    decoration-info="state == 'ordered'"
-                    decoration-warning="state == 'out'"
-                    decoration-muted="state == 'cancel'"
-                    decoration-danger="state == 'sold'"
-                />
+            <field name="state" />
         </tree>
     </field>
 </record>

@@ -23,7 +23,7 @@ Sale Rental
     :target: https://runbot.odoo-community.org/runbot/167/14.0
     :alt: Try me on Runbot
 
-|badge1| |badge2| |badge3| |badge4| |badge5| 
+|badge1| |badge2| |badge3| |badge4| |badge5|
 
 With this module, you can rent products with Odoo. This module supports:
 
@@ -106,7 +106,7 @@ promote its widespread use.
 
 Current `maintainer <https://odoo-community.org/page/maintainer-role>`__:
 
-|maintainer-alexis-via| 
+|maintainer-alexis-via|
 
 This module is part of the `OCA/sale-workflow <https://github.com/OCA/sale-workflow/tree/14.0/sale_rental>`_ project on GitHub.
 

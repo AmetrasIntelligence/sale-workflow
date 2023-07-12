@@ -28,11 +28,7 @@ class SaleOrder(models.Model):
                 lambda l: l.rental_type == "rental_extension" and l.extension_rental_id
             ):
                 initial_end_date = line.extension_rental_id.end_date
-                line.extension_rental_id.in_move_id.write(
-                    {
-                        "date": initial_end_date,
-                    }
-                )
+                line.extension_rental_id.in_move_id.write({"date": initial_end_date})
         return res
 
 
@@ -217,11 +213,7 @@ class SaleOrderLine(models.Model):
                 and line.extension_rental_id.in_move_id
             ):
                 end_datetime = fields.Datetime.to_datetime(line.end_date)
-                line.extension_rental_id.in_move_id.write(
-                    {
-                        "date": end_datetime,
-                    }
-                )
+                line.extension_rental_id.in_move_id.write({"date": end_datetime})
             elif line.sell_rental_id:
                 if line.sell_rental_id.out_move_id.state != "done":
                     raise UserError(
