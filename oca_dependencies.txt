@@ -6,3 +6,4 @@ server-tools
 partner-contact
 stock-logistics-workflow
 bank-payment
+account-closing
