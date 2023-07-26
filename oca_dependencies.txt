@@ -1,3 +1,4 @@
+account-closing
 calendar
 product-attribute
 stock-logistics-warehouse
