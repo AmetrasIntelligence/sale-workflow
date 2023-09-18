@@ -94,8 +94,3 @@ class SaleOrderLine(models.Model):
         if not res:
             res = self._check_package()
         return res
-
-    @api.onchange("product_id")
-    def product_id_change(self):
-        self.product_packaging = False
-        return super(SaleOrderLine, self).product_id_change()
