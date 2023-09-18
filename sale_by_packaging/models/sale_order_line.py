@@ -92,12 +92,18 @@ class SaleOrderLine(models.Model):
         self.product_uom_qty = self.get_packaging_qty()
         return True
 
-    @api.onchange("product_uom_qty", "product_id")
+    @api.onchange("product_uom_qty")
     def _onchange_product_uom_qty(self):
         self._force_packaging()
         self._force_qty_with_package()
-        res = super()._onchange_product_uom_qty()
-        return res
+        return super()._onchange_product_uom_qty()
+
+    @api.onchange("product_id")
+    def product_id_change(self):
+        self.product_packaging = False
+        self._force_packaging()
+        self._force_qty_with_package()
+        return super(SaleOrderLine, self).product_id_change()
 
     def _get_product_packaging_having_multiple_qty(self, product, qty, uom):
         if uom != product.uom_id:
@@ -185,7 +191,7 @@ class SaleOrderLine(models.Model):
         if not self.product_packaging and self.product_id.sell_only_by_packaging:
             packaging_id = self._get_autoassigned_packaging()
             if packaging_id:
-                self.product_packaging = packaging_id
+                self.update({"product_packaging": packaging_id})
 
     def _check_package(self):
         if self.product_packaging:
