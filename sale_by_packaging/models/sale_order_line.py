@@ -80,7 +80,9 @@ class SaleOrderLine(models.Model):
         )
 
         return product._convert_packaging_qty(
-            quantity, uom or product.uom_id, packaging=packaging,
+            quantity,
+            uom or product.uom_id,
+            packaging=packaging,
         )
 
     def _force_qty_with_package(self):

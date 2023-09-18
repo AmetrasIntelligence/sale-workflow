@@ -60,8 +60,7 @@ class ProductSetAdd(models.TransientModel):
                 rec.product_set_line_ids = rec.product_set_id.set_line_ids
 
     def _check_partner(self):
-        """Validate order partner against product set's partner if any.
-        """
+        """Validate order partner against product set's partner if any."""
         if not self.product_set_id.partner_id or self.env.context.get(
             "product_set_add_skip_validation"
         ):
@@ -77,15 +76,14 @@ class ProductSetAdd(models.TransientModel):
             )
 
     def _allowed_order_partners(self):
-        """Product sets' partners allowed for current sale order.
-        """
+        """Product sets' partners allowed for current sale order."""
         partner_ids = self.env.context.get("allowed_order_partner_ids")
         if partner_ids:
             return self.env["res.partner"].browse(partner_ids)
         return self.product_set_id.partner_id
 
     def add_set(self):
-        """ Add product set, multiplied by quantity in sale order line """
+        """Add product set, multiplied by quantity in sale order line"""
         self._check_partner()
         order_lines = self._prepare_order_lines()
         if order_lines:

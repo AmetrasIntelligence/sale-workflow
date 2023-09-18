@@ -220,8 +220,7 @@ class SaleOrderRecommendationLine(models.TransientModel):
         "wizard_id.sale_recommendation_price_origin",
     )
     def _compute_price_unit(self):
-        """Get product price unit from product list price or from last sale price
-        """
+        """Get product price unit from product list price or from last sale price"""
         price_origin = (
             fields.first(self).wizard_id.sale_recommendation_price_origin or "pricelist"
         )

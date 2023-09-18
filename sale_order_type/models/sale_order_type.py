@@ -48,7 +48,9 @@ class SaleOrderTypology(models.Model):
         default=default_picking_policy,
     )
     company_id = fields.Many2one(
-        comodel_name="res.company", default=lambda self: self.env.company, store=True,
+        comodel_name="res.company",
+        default=lambda self: self.env.company,
+        store=True,
     )
     payment_term_id = fields.Many2one(
         comodel_name="account.payment.term", string="Payment Term", check_company=True

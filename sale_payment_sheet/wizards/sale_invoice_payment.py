@@ -20,7 +20,9 @@ class SaleInvoicePaymentWiz(models.TransientModel):
         "res.currency", compute="_compute_currency", string="Currency"
     )
     journal_id = fields.Many2one(
-        comodel_name="account.journal", string="Journal", required=True,
+        comodel_name="account.journal",
+        string="Journal",
+        required=True,
     )
     amount = fields.Monetary(
         currency_field="currency_id",
@@ -31,7 +33,9 @@ class SaleInvoicePaymentWiz(models.TransientModel):
         store=True,
     )
     ref = fields.Char(string="Reference")
-    invoice_ids = fields.Many2many(comodel_name="account.move",)
+    invoice_ids = fields.Many2many(
+        comodel_name="account.move",
+    )
     partner_id = fields.Many2one(comodel_name="res.partner")
 
     @api.depends("invoice_ids")
@@ -123,7 +127,11 @@ class SaleInvoicePaymentWiz(models.TransientModel):
                 sheet_line.amount = amount_pay
             else:
                 sheet.line_ids = [
-                    (0, 0, self._prepare_sheet_line_values(invoice, amount_pay),)
+                    (
+                        0,
+                        0,
+                        self._prepare_sheet_line_values(invoice, amount_pay),
+                    )
                 ]
         self.amount -= amount_pay
 

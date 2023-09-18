@@ -7,7 +7,10 @@ from odoo import api, fields, models
 class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
-    pricelist_id = fields.Many2one(related="order_id.pricelist_id", readonly=True,)
+    pricelist_id = fields.Many2one(
+        related="order_id.pricelist_id",
+        readonly=True,
+    )
     force_company_id = fields.Many2one(
         comodel_name="res.company",
         string="Forced company",
@@ -19,7 +22,7 @@ class SaleOrderLine(models.Model):
 
     @api.depends("order_id")
     def _compute_force_company_id(self):
-        """ Related company is not computed already when we click create new line """
+        """Related company is not computed already when we click create new line"""
         for line in self:
             line.force_company_id = (
                 line.order_id.company_id
@@ -30,14 +33,14 @@ class SaleOrderLine(models.Model):
 
     @api.onchange("force_company_id")
     def _onchange_force_company_id(self):
-        """ Assign company_id because is used in domains as partner,
-            product, taxes... """
+        """Assign company_id because is used in domains as partner,
+        product, taxes..."""
         for line in self:
             line.company_id = line.force_company_id
 
     @api.onchange("order_partner_id")
     def _onchange_order_partner_id(self):
-        """ Create order to correct compute of taxes """
+        """Create order to correct compute of taxes"""
         if not self.order_partner_id or self.order_id:
             return
         SaleOrder = self.with_context(force_company=self.force_company_id.id).env[

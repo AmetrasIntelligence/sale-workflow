@@ -16,11 +16,13 @@ class SaleCouponProgram(models.Model):
     # we just add a required into the form view,
     # and do nothing in this code if not set.
     force_product_categ_id = fields.Many2one(
-        comodel_name="product.category", domain=[("is_program_category", "=", True)],
+        comodel_name="product.category",
+        domain=[("is_program_category", "=", True)],
     )
     discount_line_product_chosen = fields.Boolean()
     discount_line_product_readonly_id = fields.Many2one(
-        related="discount_line_product_id", string="Reward Line Product Readonly",
+        related="discount_line_product_id",
+        string="Reward Line Product Readonly",
     )
 
     @api.onchange("program_type", "promo_applicability")

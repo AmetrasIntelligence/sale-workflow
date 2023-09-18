@@ -111,7 +111,8 @@ class TestSaleAdvancePayment(common.SavepointCase):
 
     def test_sale_advance_payment(self):
         self.assertEqual(
-            self.sale_order_1.amount_residual, 3600,
+            self.sale_order_1.amount_residual,
+            3600,
         )
         self.assertEqual(
             self.sale_order_1.amount_residual,
@@ -209,7 +210,8 @@ class TestSaleAdvancePayment(common.SavepointCase):
 
     def test_sale_advance_payment_outgoing(self):
         self.assertEqual(
-            self.sale_order_1.amount_residual, 3600,
+            self.sale_order_1.amount_residual,
+            3600,
         )
         context_payment = {
             "active_ids": [self.sale_order_1.id],

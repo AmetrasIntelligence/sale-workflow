@@ -5,7 +5,7 @@ from odoo.tests.common import TransactionCase
 
 
 class TestSaleIsDelivered(TransactionCase):
-    """Check the _get_shipped method of Sale Order. """
+    """Check the _get_shipped method of Sale Order."""
 
     def test_sale_no_proc(self):
         """False when no procurement on both sale.order.line"""
@@ -30,8 +30,7 @@ class TestSaleIsDelivered(TransactionCase):
         self.assertFalse(self.sale.shipped)
 
     def test_sale_proc_and_service(self):
-        """True when, one line with procurement done and one line for service
-        """
+        """True when, one line with procurement done and one line for service"""
         self.sale_line1.procurement_group_id = self.proc_group1
         self.proc1.state = "done"
         self.sale_line2.product_id = self.service_product
@@ -39,8 +38,7 @@ class TestSaleIsDelivered(TransactionCase):
         self.assertTrue(self.sale.shipped)
 
     def test_sale_partially_delivered(self):
-        """False when, all lines with procurement, one is partially delivered
-        """
+        """False when, all lines with procurement, one is partially delivered"""
         self.sale_line1.procurement_group_id = self.proc_group1
         self.sale_line2.procurement_group_id = self.proc_group2
         self.proc1.state = "done"

@@ -189,7 +189,10 @@ class TestSaleCouponMultiUse(TestSaleCouponMultiUseCommon):
         self.assertEqual(self.coupon_multi_use_1.state, "new")
         # Case 2.
         amount_total_expected = self.sale_1.amount_total - currency_company._convert(
-            remaining_discount, currency_pricelist, self.company_main, _today,
+            remaining_discount,
+            currency_pricelist,
+            self.company_main,
+            _today,
         )
         self.coupon_apply_wiz.with_context(active_id=self.sale_1.id).process_coupon()
         self.assertEqual(self.sale_1.amount_total, amount_total_expected)  # USD

@@ -16,7 +16,8 @@ class SaleOrder(models.Model):
     _inherit = "sale.order"
 
     display_expected_date_ok = fields.Boolean(
-        string="Display Expected Date Ok", compute="_compute_display_expected_date_ok",
+        string="Display Expected Date Ok",
+        compute="_compute_display_expected_date_ok",
     )
 
     @api.depends("commitment_date", "expected_date")

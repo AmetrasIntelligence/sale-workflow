@@ -31,8 +31,7 @@ class TestSaleProductByPackagingOnly(Common):
             order_line.write({"product_packaging": False})
 
     def test_create_auto_fill_packaging(self):
-        """Check when the packaging should be set automatically on the line
-        """
+        """Check when the packaging should be set automatically on the line"""
         # sell_only_by_packaging is default False
         with Form(self.order) as so:
             with so.order_line.new() as so_line:
@@ -121,7 +120,7 @@ class TestSaleProductByPackagingOnly(Common):
                 )
 
     def test_packaging_qty_non_zero(self):
-        """ Check product packaging quantity.
+        """Check product packaging quantity.
 
         The packaging quantity can not be zero.
         """

@@ -36,7 +36,7 @@ class SaleOrderLine(models.Model):
         return result
 
     def _prepare_procurement_values(self, group_id=False):
-        """ Prepare specific key for moves or other components that will be
+        """Prepare specific key for moves or other components that will be
         created from a stock rule comming from a sale order line.
         This method could be override in order to add other custom key that
         could be used in move/po creation.
@@ -48,7 +48,7 @@ class SaleOrderLine(models.Model):
         return values
 
     def _get_procurement_group_key(self):
-        """ Return a key with priority to be used to regroup lines in multiple
+        """Return a key with priority to be used to regroup lines in multiple
         procurement groups
 
         """
