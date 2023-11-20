@@ -105,7 +105,7 @@ class SaleRental(models.Model):
     start_order_line_id = fields.Many2one(
         "sale.order.line", string="Rental SO Line", readonly=True
     )
-    start_date = fields.Date(
+    start_date = fields.Datetime(
         related="start_order_line_id.start_date", readonly=True, store=True
     )
     rental_product_id = fields.Many2one(
@@ -203,7 +203,7 @@ class SaleRental(models.Model):
         string="Sell Delivery Order",
         readonly=True,
     )
-    end_date = fields.Date(
+    end_date = fields.Datetime(
         compute="_compute_end_date",
         string="End Date",
         store=True,
