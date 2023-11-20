@@ -12,8 +12,8 @@ from odoo.exceptions import ValidationError
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    default_start_date = fields.Date(string="Default Start Date")
-    default_end_date = fields.Date(string="Default End Date")
+    default_start_date = fields.Datetime(string="Default Start Date")
+    default_end_date = fields.Datetime(string="Default End Date")
 
     @api.constrains("default_start_date", "default_end_date")
     def _check_default_start_end_dates(self):
@@ -53,10 +53,10 @@ class SaleOrder(models.Model):
 class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
-    start_date = fields.Date(
+    start_date = fields.Datetime(
         string="Start Date", readonly=True, states={"draft": [("readonly", False)]}
     )
-    end_date = fields.Date(
+    end_date = fields.Datetime(
         string="End Date", readonly=True, states={"draft": [("readonly", False)]}
     )
     number_of_days = fields.Integer(
