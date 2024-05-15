@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <field name="qty" position="after">
                 <field name="can_be_sold" />
-                <field name="force_sale_qty" />
+                <field name="force_sale_qty" string="Ignore Sale Rounding Precision" />
             </field>
         </field>
     </record>
@@ -22,7 +22,7 @@
             <group id="sale_group" position="inside">
                 <field name="can_be_sold" />
                 <field name="sale_rounding" />
-                <field name="force_sale_qty" />
+                <field name="force_sale_qty" string="Ignore Sale Rounding Precision" />
             </group>
         </field>
     </record>
