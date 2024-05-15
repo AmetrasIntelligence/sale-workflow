@@ -18,6 +18,7 @@ class ProductPackaging(models.Model):
         "You sell a product by packaging of 5 products.\n"
         "When the user will put 3 as quantity, the system can force the "
         "quantity to the superior unit (5 for this example).",
+        translate=True,
     )
 
     sale_rounding = fields.Float(
